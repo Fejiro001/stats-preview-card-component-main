@@ -3,38 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="Frontend Mentor challenge for a Stats preview card"
+    />
 
+    <!-- FAVICON -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Stats preview card component</title>
+    <!-- IMAGES -->
+    <link
+      rel="preload"
+      href="./assets/images/image-header-desktop.jpg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/image-header-mobile.jpg"
+      as="image"
+    />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- FONTS -->
+    <link
+      rel="preload"
+      href="./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <title>Stats preview card component</title>
   </head>
-  <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
 
-    <div class="attribution">
+  <body>
+    <main>
+      <div>
+        <picture>
+          <source
+            media="(min-width: 500px)"
+            srcset="./assets/images/image-header-desktop.webp"
+            type="image/webp"
+          />
+          <img src="./assets/images/image-header-mobile.webp" alt="image of three women working in an office" />
+        </picture>
+      </div>
+
+      <section>
+        <div>
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <span>10k+</span>
+            <p>companies</p>
+          </li>
+          <li>
+            <span>314</span>
+            <p>templates</p>
+          </li>
+          <li>
+            <span>12m+</span>
+            <p>queries</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="" target="_blank">Fejiro Abere</a>.
+    </footer>
   </body>
 </html>
+
