@@ -564,6 +564,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .flex {
   display: flex;
 }
@@ -608,14 +616,18 @@ video {
   gap: 1rem;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
 }
 
 .text-balance {
@@ -682,7 +694,7 @@ video {
 }
 
 .text-h1 {
-  font-size: clamp(1.77rem, 2.5vw, 2rem);
+  font-size: clamp(1.77rem, 2.5vw, 3rem);
 }
 
 .text-sm {
@@ -758,6 +770,18 @@ video {
     height: 28rem;
   }
 
+  .md\:h-\[26rem\] {
+    height: 26rem;
+  }
+
+  .md\:h-\[27rem\] {
+    height: 27rem;
+  }
+
+  .md\:h-\[2rem\] {
+    height: 2rem;
+  }
+
   .md\:max-w-\[70rem\] {
     max-width: 70rem;
   }
@@ -788,6 +812,10 @@ video {
 
   .md\:text-balance {
     text-wrap: balance;
+  }
+
+  .md\:text-pretty {
+    text-wrap: pretty;
   }
 
   .md\:px-20 {
