@@ -2,6 +2,15 @@
 module.exports = {
   content: ["index.html"],
   theme: {
+    fontSize: {
+      h1: "clamp(1.77rem, 2.5vw, 2rem)",
+      base: "clamp(1rem, 1vw, 1.5rem)",
+      "2xl": "clamp(1.5rem, 1vw, 2rem)",
+      sm: "clamp(0.875rem, 1vw, 1rem)",
+    },
+    screens: {
+      md: "900px",
+    },
     extend: {
       colors: {
         "main-bg": "hsl(233, 47%, 7%)",
@@ -13,15 +22,6 @@ module.exports = {
       fontFamily: {
         "inter-font": ["Inter", "sans-serif"],
         "lexend-font": ["Lexend Deca", "serif"],
-      },
-      fontSize: {
-        h1: "clamp(1.77rem, 2.5vw, 2rem)",
-        base: "clamp(1rem, 1vw, 1.5rem)",
-        "2xl": "clamp(1.5rem, 1vw, 2rem)",
-        "sm": "clamp(0.875rem, 1vw, 1rem)",
-      },
-      screens: {
-        md: "900px",
       },
     },
   },
