@@ -54,27 +54,15 @@
     class="bg-main-bg flex flex-col min-h-dvh justify-center items-center p-5 gap-3"
   >
     <main
-      class="bg-card-bg rounded-lg flex flex-col lg:flex-row-reverse lg:max-w-[50rem] justify-center items-center text-center max-w-96 overflow-hidden"
+      class="bg-card-bg rounded-lg flex flex-col md:flex-row-reverse md:max-w-[70rem] md:h-[28rem] justify-center items-center md:text-start text-center overflow-hidden"
     >
       <div
-        class="h-[250px] w-full [background-image:url('../assets/images/image-header-mobile.webp')] min-[1024px]:[background-image:url('../assets/images/image-header-desktop.webp')] bg-no-repeat bg-center bg-cover bg-blend-multiply bg-accent"
-      >
-        <!-- <picture>
-          <source
-            media="(min-width: 500px)"
-            srcset="./assets/images/image-header-desktop.webp"
-            type="image/webp"
-          />
-          <img
-            src="./assets/images/image-header-mobile.webp"
-            alt="image of three women working in an office"
-          />
-        </picture> -->
-      </div>
+        class="h-[250px] md:h-[28rem] md:basis-1/2 w-full [background-image:url('../assets/images/image-header-mobile.webp')] min-[768px]:[background-image:url('../assets/images/image-header-desktop.webp')] bg-no-repeat bg-center bg-cover bg-blend-multiply bg-accent"
+      ></div>
 
-      <section class="p-7 space-y-10">
+      <section class="flex md:basis-1/2 flex-col p-7 md:py-16 md:px-20 gap-10 md:gap-[5rem]">
         <div class="font-inter-font space-y-4">
-          <h1 class="text-white font-bold text-[1.77rem] leading-tight">
+          <h1 class="text-white font-bold text-h1 md:text-balance leading-tight">
             Get <span class="text-accent">insights</span> that help your
             business grow.
           </h1>
@@ -84,8 +72,8 @@
           </p>
         </div>
 
-        <ul class="flex flex-col gap-4 justify-center">
-          <li class="space-y-3">
+        <ul class="flex flex-col md:flex-row gap-4 justify-center md:justify-start md:gap-14 *:space-y-1">
+          <li>
             <span class="text-2xl text-white font-inter-font font-bold"
               >10k+</span
             >
@@ -95,7 +83,7 @@
               companies
             </p>
           </li>
-          <li class="space-y-3">
+          <li>
             <span class="text-2xl text-white font-inter-font font-bold"
               >314</span
             >
@@ -105,7 +93,7 @@
               templates
             </p>
           </li>
-          <li class="space-y-3">
+          <li>
             <span class="text-2xl text-white font-inter-font font-bold"
               >12m+</span
             >
@@ -119,7 +107,7 @@
       </section>
     </main>
 
-    <!-- <footer class="text-white font-lexend-font font-bold">
+    <footer class="text-white font-lexend-font font-bold">
       Challenge by
       <a
         class="text-accent hover:text-main-bg hover:bg-accent"
@@ -133,7 +121,7 @@
         target="_blank"
         >Fejiro Abere</a
       >.
-    </footer> -->
+    </footer>
   </body>
 </html>
 
